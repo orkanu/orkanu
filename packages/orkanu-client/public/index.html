@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Orkanu</title>
+    </head>
+    <body>
+        <div id="app"></div>
+        <!-- <script type="importmap-shim">
+            {
+              "imports": {
+                "react": "/orkanu/scripts/vendor/react.js",
+                "react-dom": "/orkanu/scripts/vendor/react-dom.js"
+              }
+            }
+        </script> -->
+        <script
+            type="module-shim"
+            src="__BASE_PATH__/scripts/index.js"
+        ></script>
+        <script
+            crossorigin
+            src="//cdn.jsdelivr.net/combine/npm/react@16.12.0/umd/react.production.min.js,npm/react-dom@16.12.0/umd/react-dom.production.min.js,npm/emotion@10.0.27/dist/emotion.umd.min.js"
+        ></script>
+        <script
+            defer
+            src="__BASE_PATH__/scripts/vendor/es-module-shims.min.js"
+        ></script>
+    </body>
+</html>

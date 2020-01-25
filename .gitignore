@@ -1,0 +1,12 @@
+# NodeJS
+node_modules
+
+# IDE
+.vscode/
+.history/
+
+# MacOS specific
+.DS_Store
+
+# Distribution folder
+dist

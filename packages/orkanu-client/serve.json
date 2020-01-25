@@ -1,0 +1,9 @@
+{
+    "public": "dist",
+    "redirects": [
+        {
+            "source": "/orkanu",
+            "destination": "/"
+        }
+    ]
+}

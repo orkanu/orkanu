@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "allowJs": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strict": true,
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    // TODO check and remove if required
+    "noEmit": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true
+  },
+  "exclude": ["node_modules", "build", "scripts", "acceptance-tests", "webpack", "jest", "src/setupTests.ts"],
+  "types": ["typePatches"]
+}

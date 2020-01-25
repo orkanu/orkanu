@@ -1,0 +1,51 @@
+{
+    "name": "@orkanu/orkanu-root",
+    "version": "1.0.0",
+    "description": "",
+    "private": true,
+    "main": "index.cjs.js",
+    "module": "index.esm.js",
+    "browser": "index.js",
+    "scripts": {
+        "postinstall": "lerna bootstrap",
+        "test": "lerna run test --stream",
+        "build": "lerna run build --stream",
+        "deploy": "lerna run deploy --stream",
+        "watch": "lerna run watch --stream",
+        "dev": "lerna run dev --stream",
+        "start": "lerna run start --stream",
+        "commit": "git-cz"
+    },
+    "author": "",
+    "license": "ISC",
+    "config": {
+        "commitizen": {
+            "path": "node_modules/cz-conventional-changelog"
+        },
+        "validate-commit-msg": {
+            "types": "conventional-commit-types",
+            "helpMessage": "Use \"npm run commit\" instead, we use conventional-changelog format :) (https://github.com/commitizen/cz-cli)"
+        }
+    },
+    "devDependencies": {
+        "@types/jest": "^24.9.1",
+        "@types/react": "^16.9.19",
+        "@types/react-dom": "^16.9.5",
+        "commitizen": "^4.0.3",
+        "cz-conventional-changelog": "^3.0.2",
+        "gh-pages": "^2.2.0",
+        "husky": "^4.2.1",
+        "jest": "^25.1.0",
+        "jest-emotion": "^10.0.27",
+        "lerna": "^3.20.2",
+        "prettier": "^1.19.1",
+        "replace-in-file": "^5.0.2",
+        "semantic-release": "^16.0.3",
+        "serve": "^11.3.0",
+        "ts-jest": "^25.0.0",
+        "tslint": "^6.0.0",
+        "tslint-config-prettier": "^1.18.0",
+        "tslint-config-standard": "^9.0.0",
+        "typescript": "^3.7.5"
+    }
+}
