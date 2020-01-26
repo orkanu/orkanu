@@ -20,7 +20,13 @@ export default {
         format: 'iife',
         sourcemap: true,
     },
-    external: ['react', 'react-dom', 'emotion', ' @emotion/core'],
+    external: [
+        'react',
+        'react-dom',
+        'emotion',
+        ' @emotion/core',
+        '@emotion/styled',
+    ],
     plugins: [
         clean({ targets: ['dist/'] }),
         copy({
@@ -111,7 +117,7 @@ function clean(options = { targets: [] }) {
 // }
 
 import replaceInFile from 'replace-in-file'
-import path from 'path'
+
 function replaceText(options) {
     const { files, ignore, from, to } = options
     return {

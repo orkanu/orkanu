@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders correctly 1`] = `
+.emotion-0 {
+  font-family: "Source Sans Pro",Helvetica,Sans-Serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  border: 0;
+  padding: 10px 16px;
+  border-radius: 4px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  min-width: 144px;
+  background-color: #0072C9;
+  color: #FFFFFF;
+}
+
+.emotion-0:hover {
+  background-color: #0088F1;
+}
+
+.emotion-0:active {
+  background-color: #0061AB;
+}
+
+.emotion-0:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+<button
+  class="emotion-0 emotion-1"
+  data-test-id="test"
+/>
+`;

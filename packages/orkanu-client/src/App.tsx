@@ -1,29 +1,17 @@
 import React from 'react'
 import { GlobalStyles } from './components/GlobalStyles'
-import { StateProvider } from './state/State'
+import { StateProvider, mainReducer } from './state'
+import { AppState } from './state/reducers'
 import { Root } from './pages/Root'
 
 export default function App() {
-    const initialState = {
-        theme: { primary: 'green' },
-    }
-
-    const reducer = (state: any, action: any) => {
-        switch (action.type) {
-            case 'changeTheme':
-                return {
-                    ...state,
-                    theme: action.newTheme,
-                }
-
-            default:
-                return state
-        }
+    const initialState: AppState = {
+        general: { loading: true },
     }
     return (
         <div>
             <GlobalStyles />
-            <StateProvider initialState={initialState} reducer={reducer}>
+            <StateProvider initialState={initialState} reducer={mainReducer}>
                 <Root />
             </StateProvider>
         </div>

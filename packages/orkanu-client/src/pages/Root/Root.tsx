@@ -1,12 +1,18 @@
 import React from 'react'
-import { useStateValue } from '../../state/State'
+import { useStateValue } from '../../state'
+import Shell from '../../layouts/Shell'
+
 const Root = () => {
     const [context, dispatch] = useStateValue()
-    setTimeout(() => {
-        dispatch({ type: 'changeTheme', newTheme: { secondary: 'red' } })
-    }, 3)
-    const { theme } = context
-    return <div>The theme is {JSON.stringify(theme)}</div>
+
+    return (
+        <Shell id="shell">
+            <Shell.Header />
+            <Shell.Main />
+            <Shell.Aside />
+            <Shell.Footer />
+        </Shell>
+    )
 }
 
 export { Root }
